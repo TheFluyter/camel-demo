@@ -9,7 +9,7 @@ public class FileCollector extends RouteBuilder {
     @Override
     public void configure() {
 
-        from("file:collector-map-in").routeId("MyFirstFileCollector")
+        from("file:collector-map-in").routeId("my.first.file.collector")
             .log("Processing file: ${file:name}")
             .to("file:distributor-map-out");
 
